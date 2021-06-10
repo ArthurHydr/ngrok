@@ -6,16 +6,16 @@ $ nvim ngrok.yml
 ```
 ```yaml
 authtoken: token
-  tunnels:
-    tunnel_1:
-      proto: http
-      addr: 80
-    tunnel_2:
-      proto: tcp
-      addr: 666
-    tunnel3:
-      proto: tcp
-      addr: 443
+tunnels:
+  tunnel_1:
+    proto: http
+    addr: 80
+  tunnel_2:
+    proto: tcp
+    addr: 666
+  tunnel3:
+    proto: tcp
+    addr: 443
 ```
 ```bash
 $ ngrok start --all
